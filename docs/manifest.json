@@ -1,11 +1,11 @@
 {
-    "name": "first_site",
-    "short_name": "first_site",
+    "name": "vaquinhadori",
+    "short_name": "vaquinhadori",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Fist of all...",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
