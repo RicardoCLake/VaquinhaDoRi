@@ -3,7 +3,7 @@ import 'package:vaquinhadori/myTheme.dart';
 
 class FrancePartition extends StatelessWidget {
   const FrancePartition({Key? key}) : super(key: key);
-  final double _height = 100.0;
+  final double _height = 50.0;
 
   @override
   Widget build(BuildContext context) {
