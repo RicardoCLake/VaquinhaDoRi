@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:vaquinhadori/myTheme.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
@@ -97,9 +98,13 @@ class DonationPartition extends StatelessWidget {
               const Text("Como é possível me ajudar?"),
               const Text("Faça uma doação via pix"),
               const Text("Chave: doe@vaquinhadori.com.br"),
-              TextButton(
+              OutlinedButton(
                   onPressed: () {
-                    print("clicou");
+                    Clipboard.setData(
+                        const ClipboardData(text: "doe@vaquinhadori.com.br"));
+                    var snack =
+                        const SnackBar(content: Text("Chave PIX copiada!"));
+                    ScaffoldMessenger.of(context).showSnackBar(snack);
                   },
                   child: const Text("Copiar PIX"))
             ]),
