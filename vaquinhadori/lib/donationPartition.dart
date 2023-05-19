@@ -83,15 +83,66 @@ class DonationPartition extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: const BoxDecoration(
-        color: MyTheme.almostWhite,
-      ),
-      // child: Column(
-      //   children: <Widget>[GetUserName('testDocument')],
-      // ),
-      child: Column(
-        children: const <Widget>[GetLastTransaction()],
-      ),
-    );
+        padding: const EdgeInsets.all(8),
+        decoration: const BoxDecoration(
+          color: MyTheme.almostWhite,
+        ),
+        // child: Column(
+        //   children: <Widget>[GetUserName('testDocument')],
+        // ),
+
+        child: Column(children: [
+          Center(
+            child: Column(children: [
+              const Text("Como é possível me ajudar?"),
+              const Text("Faça uma doação via pix"),
+              const Text("Chave: doe@vaquinhadori.com.br"),
+              TextButton(
+                  onPressed: () {
+                    print("clicou");
+                  },
+                  child: const Text("Copiar PIX"))
+            ]),
+          ),
+          const SizedBox(height: 32),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Expanded(
+                  child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  RichText(
+                      textAlign: TextAlign.start,
+                      text: const TextSpan(children: [
+                        TextSpan(
+                            text:
+                                "Prefere outra forma de transferência? Ou ficou com alguma dúvida?")
+                      ])),
+                  const SizedBox(height: 16),
+                  RichText(
+                      textAlign: TextAlign.start,
+                      text: const TextSpan(children: [
+                        TextSpan(
+                            text:
+                                "Por favor, entre em contato comigo via o email do pix!")
+                      ])),
+                ],
+              )),
+              const SizedBox(width: 8),
+              const GetLastTransaction(),
+            ],
+          ),
+          const SizedBox(height: 32),
+          RichText(
+              text: const TextSpan(children: [
+            TextSpan(text: "“Meu muito obrigado aos mais de 23 doadores!!”")
+          ])),
+          RichText(
+              text: const TextSpan(
+                  children: [TextSpan(text: "- Ricardo Chiquetto do Lago")])),
+        ]));
   }
 }

@@ -24,15 +24,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Vaquinha do Ri',
       theme: ThemeData(
         // This is the theme of your application.
         colorScheme: MyTheme.colorScheme1,
         fontFamily: MyTheme.primaryFont,
         textTheme: const TextTheme(
-            bodyMedium: TextStyle(fontSize: 22),
-            titleMedium: TextStyle(fontSize: 34),
-            bodyLarge: TextStyle(fontSize: 34)),
+            bodyMedium: TextStyle(fontSize: 18),
+            titleMedium: TextStyle(fontSize: 24),
+            bodyLarge: TextStyle(fontSize: 20)),
         appBarTheme: const AppBarTheme(
           backgroundColor: MyTheme.darkBlue,
           foregroundColor: MyTheme.almostWhite,
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
           titleTextStyle: TextStyle(
               color: MyTheme.almostWhite,
-              fontSize: 45,
+              fontSize: 32,
               fontFamily: MyTheme.primaryFont),
         ),
       ),
