@@ -13,6 +13,42 @@ class Transaction {
       this.donatorCount);
 }
 
+class GetDonatorCount extends StatelessWidget {
+  const GetDonatorCount({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return FutureBuilder<QuerySnapshot>(
+      future: FirebaseFirestore.instance
+          .collection('transactions')
+          .orderBy("donationDateTime", descending: true)
+          .limit(1)
+          .get(),
+      builder: (context, snapshot) {
+        if (snapshot.hasError) {
+          return const Text("Erro ao carregar dados.");
+        }
+        if (!snapshot.hasData) {
+          return const Text("Erro ao carregar dados");
+        }
+        Map<String, dynamic> data =
+            snapshot.data?.docs.first.data() as Map<String, dynamic>;
+        if (snapshot.connectionState == ConnectionState.done) {
+          return RichText(
+              text: TextSpan(children: [
+            TextSpan(
+                text:
+                    "“Meu muito obrigado aos mais de ${data["donatorCount"]} doadores!!”")
+          ]));
+          // return const LinearProgressIndicator(value: 50);
+        }
+
+        return const Text("Carregando informações...");
+      },
+    );
+  }
+}
+
 class GetLastTransaction extends StatelessWidget {
   const GetLastTransaction({super.key});
 
@@ -98,7 +134,14 @@ class DonationPartition extends StatelessWidget {
               const Text("Como é possível me ajudar?"),
               const Text("Faça uma doação via pix"),
               const Text("Chave: doe@vaquinhadori.com.br"),
+              const SizedBox(height: 16),
               OutlinedButton(
+                  style: OutlinedButton.styleFrom(
+                    // backgroundColor: Colors.black,
+                    // primary: Colors.white,
+                    side: const BorderSide(
+                        color: MyTheme.darkBlue, width: 1), //<-- SEE HERE
+                  ),
                   onPressed: () {
                     Clipboard.setData(
                         const ClipboardData(text: "doe@vaquinhadori.com.br"));
@@ -106,7 +149,13 @@ class DonationPartition extends StatelessWidget {
                         const SnackBar(content: Text("Chave PIX copiada!"));
                     ScaffoldMessenger.of(context).showSnackBar(snack);
                   },
-                  child: const Text("Copiar PIX"))
+                  child: const Padding(
+                    padding: EdgeInsets.all(8),
+                    child: Text(
+                      "Copiar PIX",
+                      style: TextStyle(fontSize: 20),
+                    ),
+                  ))
             ]),
           ),
           const SizedBox(height: 32),
@@ -141,10 +190,7 @@ class DonationPartition extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 32),
-          RichText(
-              text: const TextSpan(children: [
-            TextSpan(text: "“Meu muito obrigado aos mais de 23 doadores!!”")
-          ])),
+          const GetDonatorCount(),
           RichText(
               text: const TextSpan(
                   children: [TextSpan(text: "- Ricardo Chiquetto do Lago")])),

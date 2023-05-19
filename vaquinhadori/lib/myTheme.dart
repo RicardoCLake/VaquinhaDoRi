@@ -22,7 +22,7 @@ class MyTheme {
     onPrimary: almostWhite,
     secondary: red,
     onSecondary: almostWhite,
-    surface: lightblue,
+    surface: darkBlue, // lightblue,
     onSurface: almostWhite,
   );
 }
