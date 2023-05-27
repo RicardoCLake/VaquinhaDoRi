@@ -74,9 +74,20 @@ class IdentityPartition extends StatelessWidget {
                                 style: TextStyle(fontWeight: FontWeight.bold)),
                             TextSpan(
                                 text:
-                                    " e que está determinado a voltar para trabalhar em terras tupiniquins.\" \n~ Ricardo Chiquetto do Lago")
-                          ])
+                                    " e que está determinado a voltar para trabalhar em terras tupiniquins.\""),
+                          ]),
                     ])),
+          ),
+          Container(
+            alignment: Alignment.topRight,
+            height: DefaultTextStyle.of(context).style.height,
+            child: Expanded(
+              child: RichText(
+                  textAlign: TextAlign.left,
+                  text: TextSpan(
+                      style: DefaultTextStyle.of(context).style,
+                      text: "~ Ricardo Chiquetto do Lago")),
+            ),
           ),
         ],
       ),
