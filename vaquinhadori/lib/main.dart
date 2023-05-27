@@ -42,7 +42,8 @@ class MyApp extends StatelessWidget {
           titleTextStyle: TextStyle(
               color: MyTheme.almostWhite,
               fontSize: 32,
-              fontFamily: MyTheme.primaryFont),
+              fontFamily: MyTheme.primaryFont,
+              fontWeight: FontWeight.bold),
         ),
       ),
       home: const MyHomePage(),
