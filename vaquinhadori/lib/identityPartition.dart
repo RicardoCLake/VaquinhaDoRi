@@ -64,7 +64,10 @@ class IdentityPartition extends StatelessWidget {
                     style: DefaultTextStyle.of(context).style,
                     children: const [
                       TextSpan(
-                          style: TextStyle(fontFamily: MyTheme.secundaryFont),
+                          style: TextStyle(
+                            fontFamily: MyTheme.secundaryFont,
+                            fontWeight: FontWeight.w300,
+                          ),
                           children: [
                             TextSpan(
                                 text:
@@ -81,13 +84,11 @@ class IdentityPartition extends StatelessWidget {
           Container(
             alignment: Alignment.topRight,
             height: DefaultTextStyle.of(context).style.height,
-            child: Expanded(
-              child: RichText(
-                  textAlign: TextAlign.left,
-                  text: TextSpan(
-                      style: DefaultTextStyle.of(context).style,
-                      text: "~ Ricardo Chiquetto do Lago")),
-            ),
+            child: RichText(
+                textAlign: TextAlign.left,
+                text: TextSpan(
+                    style: DefaultTextStyle.of(context).style,
+                    text: "~ Ricardo Chiquetto do Lago")),
           ),
         ],
       ),

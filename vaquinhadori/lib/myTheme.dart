@@ -11,6 +11,8 @@ class MyTheme {
 
   static const primaryFont = 'RobotoSlab';
   static const secundaryFont = 'Nunito';
+  static const tertiaryFont = 'NunitoSans';
+  static const quaternaryFont = 'RubikMonoOne';
 
   static const colorScheme1 = ColorScheme(
     background: almostWhite,

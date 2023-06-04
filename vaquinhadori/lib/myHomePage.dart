@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:vaquinhadori/myTheme.dart';
+import 'package:vaquinhadori/myAppBar.dart';
 import 'package:vaquinhadori/supelecPartition.dart';
 import 'package:vaquinhadori/francePartition.dart';
 import 'package:vaquinhadori/donationPartition.dart';
@@ -49,7 +51,8 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: const MyAppBar(),
+        automaticallyImplyLeading: false,
       ),
       body: ListView.builder(
         itemBuilder: partitionsBuilder,

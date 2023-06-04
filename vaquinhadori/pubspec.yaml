@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   firebase_core: ^2.10.0
   cloud_firestore: ^4.5.3
+  url_launcher: ^6.1.11
 
 dev_dependencies:
   flutter_test:
@@ -64,6 +65,9 @@ flutter:
   assets:
      - assets/images/perfil.png
      - assets/images/logoCS.png
+     - assets/images/ImagemClassificacaoSupelec.png
+     - assets/images/LogoVaquinhadoRi-simples-quadrado-semfundo.png
+     - assets/images/LogoVaquinhadoRi-semfundo.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -78,16 +82,45 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Nunito
-      fonts:
-        - asset: assets/fonts/Nunito/static/Nunito-Light.ttf
-        - asset: assets/fonts/Nunito/static/Nunito-Bold.ttf
-          weight: 700
     - family: RobotoSlab
       fonts:
         - asset: assets/fonts/Roboto_Slab/static/RobotoSlab-Light.ttf
         - asset: assets/fonts/Roboto_Slab/static/RobotoSlab-Bold.ttf
           weight: 700
+
+    - family: RubikMonoOne
+      fonts:
+        - asset: assets/fonts/Rubik_Mono_One/RubikMonoOne-Regular.ttf
+
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/Nunito/static/Nunito-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Nunito/static/Nunito-Regular.ttf
+        - asset: assets/fonts/Nunito/static/Nunito-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Nunito/static/Nunito-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Nunito/static/Nunito-Black.ttf
+          weight: 900
+
+    - family: NunitoSans
+      fonts:
+        - asset: assets/fonts/Nunito_Sans/static/NunitoSans_10pt-Black.ttf
+
+    - family: NunitoSansExpanded
+      fonts:
+        - asset: assets/fonts/Nunito_Sans/static/NunitoSans_10pt_Expanded-Black.ttf
+
+    - family: Tajawal
+      fonts:
+        - asset: assets/fonts/Tajawal/Tajawal-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Tajawal/Tajawal-Regular.ttf
+        - asset: assets/fonts/Tajawal/Tajawal-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Tajawal/Tajawal-Black.ttf
+          weight: 900
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
