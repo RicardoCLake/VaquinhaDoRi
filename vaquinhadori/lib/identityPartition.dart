@@ -88,7 +88,14 @@ class IdentityPartition extends StatelessWidget {
                 textAlign: TextAlign.left,
                 text: TextSpan(
                     style: DefaultTextStyle.of(context).style,
-                    text: "~ Ricardo Chiquetto do Lago")),
+                    children: [
+                      TextSpan(
+                          style: TextStyle(
+                              fontSize:
+                                  DefaultTextStyle.of(context).style.fontSize! -
+                                      1.5),
+                          text: "~ Ricardo Chiquetto do Lago")
+                    ])),
           ),
         ],
       ),
