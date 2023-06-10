@@ -75,17 +75,18 @@ class GetValueCounter extends StatelessWidget {
                   alignment: Alignment.topRight,
                   height: DefaultTextStyle.of(context).style.height,
                   child: RichText(
-                      textAlign: TextAlign.left,
+                      textAlign: TextAlign.right,
                       text: TextSpan(
                           style: DefaultTextStyle.of(context).style,
                           children: [
                             TextSpan(
                                 style: TextStyle(
-                                    color: MyTheme.almostBlack,
-                                    fontSize: DefaultTextStyle.of(context)
-                                            .style
-                                            .fontSize! -
-                                        5),
+                                  color: MyTheme.red,
+                                  fontSize: DefaultTextStyle.of(context)
+                                          .style
+                                          .fontSize! -
+                                      3,
+                                ),
                                 text: "*Atualizado a cada 24 horas")
                           ])),
                 ),

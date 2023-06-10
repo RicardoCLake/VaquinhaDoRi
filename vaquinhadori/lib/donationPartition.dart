@@ -186,6 +186,7 @@ class DonationPartition extends StatelessWidget {
             ),
             const SizedBox(height: 60),
             const GetDonatorCount(),
+            const SizedBox(height: 60),
           ])),
     );
   }

@@ -68,6 +68,7 @@ flutter:
      - assets/images/logoCS.png
      - assets/images/ImagemClassificacaoSupelec.png
      - assets/images/LogoVaquinhadoRi-simples-quadrado-semfundo.png
+     - assets/images/LogoVaquinhadoRi-simples-semfundo.png
      - assets/images/LogoVaquinhadoRi-semfundo.png
 
 
@@ -97,6 +98,9 @@ flutter:
       fonts:
         - asset: assets/fonts/Nunito/static/Nunito-Light.ttf
           weight: 300
+        - asset: assets/fonts/Nunito/static/Nunito-LightItalic.ttf
+          weight: 300
+          style: italic
         - asset: assets/fonts/Nunito/static/Nunito-Regular.ttf
         - asset: assets/fonts/Nunito/static/Nunito-Medium.ttf
           weight: 500

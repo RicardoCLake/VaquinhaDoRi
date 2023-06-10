@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:vaquinhadori/myTheme.dart';
-import 'package:vaquinhadori/myAppBar.dart';
 import 'package:vaquinhadori/supelecPartition.dart';
 import 'package:vaquinhadori/francePartition.dart';
 import 'package:vaquinhadori/donationPartition.dart';
 import 'package:vaquinhadori/identityPartition.dart';
+import 'package:vaquinhadori/myAppBar.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -20,13 +19,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _donationCounter = 0;
-  int _donationPresentValue = 0;
-  int _donationGoalValue = 0;
-
-  void _copyPixKey() {
-    //TODO
-  }
+  late ScrollController _scrollController;
 
   Widget? partitionsBuilder(BuildContext context, int partitionID) {
     switch (partitionID) {
@@ -43,26 +36,69 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
+  void _scrollToIdentity() {
+    _scrollController.animateTo(
+      0, // Posição específica na lista
+      duration: const Duration(milliseconds: 500),
+      curve: Curves.easeInOut,
+    );
+  }
+
+  void _scrollToSupelec() {
+    _scrollController.animateTo(
+      800, // Posição específica na lista
+      duration: const Duration(milliseconds: 500),
+      curve: Curves.easeInOut,
+    );
+  }
+
+  void _scrollToDonation() {
+    _scrollController.animateTo(
+      1800, // Posição específica na lista
+      duration: const Duration(milliseconds: 500),
+      curve: Curves.easeInOut,
+    );
+  }
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _scrollController = ScrollController();
+  }
+
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
     return Scaffold(
-      appBar: AppBar(
-        title: const MyAppBarTitle(),
-        automaticallyImplyLeading: false,
-      ),
-      body: ListView.builder(
-        itemBuilder: partitionsBuilder,
-        itemCount: 5,
-        //controller: to change position in appbar
-      ),
-      //floatingActionButton: FloatingActionButton(
-      //  onPressed: _copyPixKey,
-      //  tooltip: 'Increment',
-      //  child: const Icon(Icons.add),
-    );
+        appBar: AppBar(
+          titleSpacing: 0,
+          centerTitle: false,
+          elevation: 10,
+          toolbarHeight: 90,
+          title: const MyAppBarTitle(),
+          automaticallyImplyLeading: false,
+          bottom: PreferredSize(
+            preferredSize: const Size.fromHeight(20),
+            child: MyAppBarBottom(
+              function1: _scrollToIdentity,
+              function2: _scrollToSupelec,
+              function3: _scrollToDonation,
+            ),
+          ),
+        ),
+        body: ListView.builder(
+            itemBuilder: partitionsBuilder,
+            itemCount: 5,
+            controller: _scrollController)
+        //floatingActionButton: FloatingActionButton(
+        //  onPressed: _copyPixKey,
+        //  tooltip: 'Increment',
+        //  child: const Icon(Icons.add),
+        );
   }
 }
