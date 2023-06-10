@@ -72249,7 +72249,7 @@ o===$&&A.b()
 s=q
 return new A.y5(new A.u_(!1,B.Gq,new A.IN(new A.HK(r.ga36(),r.ga38(),r.ga34(),q),B.IE,q),10,B.mI,!1,0,new A.PH(90,20,1/0,90+p),90,q),new A.He(new A.a8X(r.gabv(),5,!0,!0,!0,q),q,B.aP,!1,o,q,s,!1,q,5,B.aH,B.Hx,q,B.a_,q),q)}}
 A.KD.prototype={
-M(a){var s,r,q,p,o,n=null,m=t.p,l=A.lJ(A.a([A.a0l("assets/images/logoCS.png",n,180),B.cN,B.Oe],m),B.by,B.al,B.a4),k=t.yS,j=a.K(k)
+M(a){var s,r,q,p,o,n=null,m=t.p,l=A.lJ(A.a([A.a0l("assets/images/logoCS.png",n,100),B.cN,B.Oe],m),B.by,B.al,B.a4),k=t.yS,j=a.K(k)
 j=A.eg(n,n,B.P,n,n,!0,n,A.bk(B.E_,n,(j==null?B.z:j).w,n),B.bW,n,n,1,B.K)
 s=A.a0l("assets/images/ImagemClassificacaoSupelec.png",n,200)
 r=a.K(k)
@@ -77188,7 +77188,7 @@ B.Oc=new A.fY("Como \xe9 poss\xedvel me ajudar?",null,B.N1,null,null,null,null)
 B.wT=new A.fY("Carregando informa\xe7\xf5es...",null,null,null,null,null,null)
 B.N2=new A.q(!0,null,null,null,null,null,28,B.aT,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Od=new A.fY("Quem sou?",null,B.N2,null,null,null,null)
-B.N3=new A.q(!0,null,null,null,null,null,26,B.aT,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.N3=new A.q(!0,null,null,null,null,null,25,B.aT,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Oe=new A.fY("Para onde vou?",null,B.N3,null,null,null,null)
 B.wU=new A.fY("Erro ao carregar dados",null,null,null,null,null,null)
 B.wV=new A.fY("Erro ao carregar dados.",null,null,null,null,null,null)
