@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _scrollToSupelec() {
     _scrollController.animateTo(
-      800, // Posição específica na lista
+      700, // Posição específica na lista para PC é 750
       duration: const Duration(milliseconds: 500),
       curve: Curves.easeInOut,
     );
@@ -55,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _scrollToDonation() {
     _scrollController.animateTo(
-      1800, // Posição específica na lista
+      1300, // Posição específica na lista para PC é 1500
       duration: const Duration(milliseconds: 500),
       curve: Curves.easeInOut,
     );

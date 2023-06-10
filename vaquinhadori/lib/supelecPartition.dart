@@ -53,7 +53,7 @@ class SupelecPartition extends StatelessWidget {
                         text:
                             "que permite ao aluno escolher seu percurso acadêmico dentre as mais diferentes áreas.")
                   ])),
-          const SizedBox(height: 30),
+          const SizedBox(height: 50),
           Image.asset(
             'assets/images/ImagemClassificacaoSupelec.png',
             width: 200,
@@ -89,7 +89,7 @@ class SupelecPartition extends StatelessWidget {
                           text: "L'étudiant",
                         )
                       ]))),
-          const SizedBox(height: 70),
+          const SizedBox(height: 50),
         ],
       ),
     );
