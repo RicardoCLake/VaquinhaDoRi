@@ -20,12 +20,12 @@ class SupelecPartition extends StatelessWidget {
           Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Image.asset(
               'assets/images/logoCS.png',
-              width: 180,
+              width: 135,
             ),
             const Expanded(child: SizedBox(height: 1)),
             const Text(
               "Para onde vou?",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 26),
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
             )
           ]),
           const SizedBox(height: 30),
