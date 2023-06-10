@@ -20,15 +20,15 @@ class SupelecPartition extends StatelessWidget {
           Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Image.asset(
               'assets/images/logoCS.png',
-              width: 100,
+              width: 135,
             ),
             const Expanded(child: SizedBox(height: 1)),
             const Text(
               "Para onde vou?",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
             )
           ]),
-          const SizedBox(height: 50),
+          const SizedBox(height: 30),
           RichText(
               textAlign: TextAlign.justify,
               text: TextSpan(
@@ -89,7 +89,7 @@ class SupelecPartition extends StatelessWidget {
                           text: "L'étudiant",
                         )
                       ]))),
-          const SizedBox(height: 50),
+          const SizedBox(height: 70),
         ],
       ),
     );

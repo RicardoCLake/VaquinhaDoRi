@@ -109,13 +109,13 @@ class MyAppBarExpanded extends StatelessWidget {
             child: RichText(
               text: const TextSpan(
                   style:
-                      TextStyle(fontSize: 28, fontFamily: MyTheme.tertiaryFont),
+                      TextStyle(fontSize: 30, fontFamily: MyTheme.tertiaryFont),
                   children: [
                     TextSpan(
                       style: TextStyle(
                           fontFamily: MyTheme.quaternaryFont,
                           color: MyTheme.almostWhite,
-                          fontSize: 32),
+                          fontSize: 34),
                       text: "V",
                     ),
                     TextSpan(
@@ -129,7 +129,7 @@ class MyAppBarExpanded extends StatelessWidget {
                       style: TextStyle(
                           fontFamily: MyTheme.quaternaryFont,
                           color: MyTheme.red,
-                          fontSize: 32),
+                          fontSize: 34),
                       text: "R",
                     ),
                     TextSpan(
