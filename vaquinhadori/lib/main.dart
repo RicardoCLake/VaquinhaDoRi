@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Vaquinha do Ri',
+      title: 'Vaquinha do Ricardo',
       theme: ThemeData(
         // This is the theme of your application.
         colorScheme: MyTheme.colorScheme1,

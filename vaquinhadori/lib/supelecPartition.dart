@@ -14,83 +14,90 @@ class SupelecPartition extends StatelessWidget {
       decoration: const BoxDecoration(
         color: MyTheme.almostWhite,
       ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      child: Container(
+        constraints: const BoxConstraints(maxWidth: 700),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Image.asset(
+                'assets/images/logoCS.png',
+                width: 100,
+              ),
+              const Expanded(child: SizedBox(height: 1)),
+              const Text(
+                "Para onde vou?",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+              )
+            ]),
+            const SizedBox(height: 30),
+            RichText(
+                textAlign: TextAlign.justify,
+                text: TextSpan(
+                    style: DefaultTextStyle.of(context).style,
+                    children: const [
+                      TextSpan(text: "A "),
+                      TextSpan(
+                          text: "École CentraleSupélec ",
+                          style: TextStyle(fontWeight: FontWeight.bold)),
+                      TextSpan(
+                          text:
+                              "é a terceira escola de engenharia mais renomada da "),
+                      TextSpan(
+                          text: "França. ",
+                          style: TextStyle(fontWeight: FontWeight.bold)),
+                      TextSpan(
+                          text:
+                              "Sua formação contempla o conceito europeu de "),
+                      TextSpan(
+                          text: "Engenharia Generalista, ",
+                          style: TextStyle(fontWeight: FontWeight.bold)),
+                      TextSpan(
+                          text:
+                              "que permite ao aluno escolher seu percurso acadêmico dentre as mais diferentes áreas.")
+                    ])),
+            const SizedBox(height: 50),
             Image.asset(
-              'assets/images/logoCS.png',
-              width: 100,
+              'assets/images/ImagemClassificacaoSupelec.png',
+              width: 200,
             ),
-            const Expanded(child: SizedBox(height: 1)),
-            const Text(
-              "Para onde vou?",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
-            )
-          ]),
-          const SizedBox(height: 30),
-          RichText(
-              textAlign: TextAlign.justify,
-              text: TextSpan(
-                  style: DefaultTextStyle.of(context).style,
-                  children: const [
-                    TextSpan(text: "A "),
-                    TextSpan(
-                        text: "École CentraleSupélec ",
-                        style: TextStyle(fontWeight: FontWeight.bold)),
-                    TextSpan(
-                        text:
-                            "é a terceira escola de engenharia mais renomada da "),
-                    TextSpan(
-                        text: "França. ",
-                        style: TextStyle(fontWeight: FontWeight.bold)),
-                    TextSpan(
-                        text: "Sua formação contempla o conceito europeu de "),
-                    TextSpan(
-                        text: "Engenharia Generalista, ",
-                        style: TextStyle(fontWeight: FontWeight.bold)),
-                    TextSpan(
-                        text:
-                            "que permite ao aluno escolher seu percurso acadêmico dentre as mais diferentes áreas.")
-                  ])),
-          const SizedBox(height: 50),
-          Image.asset(
-            'assets/images/ImagemClassificacaoSupelec.png',
-            width: 200,
-          ),
-          const SizedBox(height: 20),
-          Container(
-              alignment: Alignment.topRight,
-              height: DefaultTextStyle.of(context).style.height,
-              child: RichText(
-                  textAlign: TextAlign.left,
-                  text: TextSpan(
-                      style: DefaultTextStyle.of(context).style,
-                      children: [
-                        TextSpan(
-                          style: TextStyle(
-                            fontSize:
-                                (DefaultTextStyle.of(context).style.fontSize)! -
-                                    deltaFont,
-                            color: MyTheme.red,
-                          ),
-                          recognizer: TapGestureRecognizer()..onTap = launchURL,
-                          text: "Segundo o portal ",
-                        ),
-                        TextSpan(
-                          style: TextStyle(
+            const SizedBox(height: 20),
+            Container(
+                alignment: Alignment.topRight,
+                height: DefaultTextStyle.of(context).style.height,
+                child: RichText(
+                    textAlign: TextAlign.left,
+                    text: TextSpan(
+                        style: DefaultTextStyle.of(context).style,
+                        children: [
+                          TextSpan(
+                            style: TextStyle(
                               fontSize: (DefaultTextStyle.of(context)
                                       .style
                                       .fontSize)! -
                                   deltaFont,
                               color: MyTheme.red,
-                              decoration: TextDecoration.underline),
-                          recognizer: TapGestureRecognizer()..onTap = launchURL,
-                          text: "L'étudiant",
-                        )
-                      ]))),
-          const SizedBox(height: 50),
-        ],
+                            ),
+                            recognizer: TapGestureRecognizer()
+                              ..onTap = launchURL,
+                            text: "Segundo o portal ",
+                          ),
+                          TextSpan(
+                            style: TextStyle(
+                                fontSize: (DefaultTextStyle.of(context)
+                                        .style
+                                        .fontSize)! -
+                                    deltaFont,
+                                color: MyTheme.red,
+                                decoration: TextDecoration.underline),
+                            recognizer: TapGestureRecognizer()
+                              ..onTap = launchURL,
+                            text: "L'étudiant",
+                          )
+                        ]))),
+            const SizedBox(height: 50),
+          ],
+        ),
       ),
     );
   }
