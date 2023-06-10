@@ -77,11 +77,13 @@ class GetValueCounter extends StatelessWidget {
                   child: RichText(
                       textAlign: TextAlign.right,
                       text: TextSpan(
-                          style: DefaultTextStyle.of(context).style,
+                          style: DefaultTextStyle.of(context)
+                              .style
+                              .copyWith(fontWeight: FontWeight.w400),
                           children: [
                             TextSpan(
                                 style: TextStyle(
-                                  color: MyTheme.red,
+                                  color: MyTheme.darkBlue,
                                   fontSize: DefaultTextStyle.of(context)
                                           .style
                                           .fontSize! -

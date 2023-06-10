@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _scrollToSupelec() {
     _scrollController.animateTo(
-      835, //calculo exato de identity+france
+      838, //calculo exato de identity+france
       duration: const Duration(milliseconds: 500),
       curve: Curves.easeInOut,
     );
@@ -55,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _scrollToDonation() {
     _scrollController.animateTo(
-      1550, // exata de identity+france+supelec+france
+      1556, //calculo exato de identity+france+supelec+france
       duration: const Duration(milliseconds: 500),
       curve: Curves.easeInOut,
     );
