@@ -5,10 +5,10 @@ class MyTheme {
   static const almostWhite = Color(0xFFF2F2F2);
   static const fullWhite = Color(0xFFFFFFFF);
   static const red = Color(0xFFf20505);
-  static const lightblue = Color(0xFF7B97ED);
+  static const lightblue = Color.fromARGB(255, 90, 111, 173);
   static const almostBlack = Color(0xFF0D0D0D);
   static const fullBlack = Color(0xFF000000);
-  static const gray = Color(0xFF8c8c8c);
+  static const gray = Color(0xFFc8c8c8);
 
   static const primaryFont = 'RobotoSlab';
   static const secundaryFont = 'Nunito';

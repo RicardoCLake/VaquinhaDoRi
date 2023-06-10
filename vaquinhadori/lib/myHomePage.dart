@@ -51,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
-        title: const MyAppBar(),
+        title: const MyAppBarTitle(),
         automaticallyImplyLeading: false,
       ),
       body: ListView.builder(
