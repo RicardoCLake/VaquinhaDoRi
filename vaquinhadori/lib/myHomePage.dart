@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _scrollToSupelec() {
     _scrollController.animateTo(
-      900, // Posição específica na lista
+      800, // Posição específica na lista
       duration: const Duration(milliseconds: 500),
       curve: Curves.easeInOut,
     );
@@ -55,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _scrollToDonation() {
     _scrollController.animateTo(
-      1500, // Posição específica na lista
+      1800, // Posição específica na lista
       duration: const Duration(milliseconds: 500),
       curve: Curves.easeInOut,
     );
@@ -81,11 +81,11 @@ class _MyHomePageState extends State<MyHomePage> {
           centerTitle: false,
           elevation: 10,
           surfaceTintColor: MyTheme.almostBlack,
-          toolbarHeight: 95,
+          toolbarHeight: 90,
           title: const MyAppBarTitle(),
           automaticallyImplyLeading: false,
           bottom: PreferredSize(
-            preferredSize: const Size.fromHeight(15),
+            preferredSize: const Size.fromHeight(20),
             child: MyAppBarBottom(
               function1: _scrollToIdentity,
               function2: _scrollToSupelec,

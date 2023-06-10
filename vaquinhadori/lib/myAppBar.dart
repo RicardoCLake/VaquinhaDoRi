@@ -4,7 +4,7 @@ import 'package:vaquinhadori/myTheme.dart';
 class MyAppBarTitle extends StatelessWidget {
   const MyAppBarTitle({super.key});
 
-  static double _logoHeight = 38;
+  static double _logoHeight = 40;
   static double _logoPadding = 20;
 
   @override
@@ -34,13 +34,13 @@ class MyAppBarTitle extends StatelessWidget {
               child: RichText(
                 text: const TextSpan(
                     style: TextStyle(
-                        fontSize: 26, fontFamily: MyTheme.tertiaryFont),
+                        fontSize: 30, fontFamily: MyTheme.tertiaryFont),
                     children: [
                       TextSpan(
                         style: TextStyle(
                             fontFamily: MyTheme.quaternaryFont,
                             color: MyTheme.almostWhite,
-                            fontSize: 31),
+                            fontSize: 34),
                         text: "V",
                       ),
                       TextSpan(
@@ -54,7 +54,7 @@ class MyAppBarTitle extends StatelessWidget {
                         style: TextStyle(
                             fontFamily: MyTheme.quaternaryFont,
                             color: MyTheme.red,
-                            fontSize: 31),
+                            fontSize: 34),
                         text: "R",
                       ),
                       TextSpan(

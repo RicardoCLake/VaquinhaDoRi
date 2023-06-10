@@ -17,12 +17,12 @@ class IdentityPartition extends StatelessWidget {
           Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
             const Text(
               "Quem sou?",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 29),
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32),
             ),
             const Expanded(child: SizedBox(height: 1)),
             Image.asset(
               'assets/images/perfil.png',
-              height: 150,
+              height: 200,
             )
           ]),
           const SizedBox(height: 30),
