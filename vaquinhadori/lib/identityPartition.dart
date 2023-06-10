@@ -52,12 +52,25 @@ class IdentityPartition extends StatelessWidget {
                           style: TextStyle(fontWeight: FontWeight.bold)),
                       TextSpan(
                           text:
-                              "e fiz várias atividades extracurriculares. Porém, por diferentes razões, ainda não consegui nenhuma bolsa de estudos e, por isso, preciso da "),
+                              "e fiz várias atividades extracurriculares. Assim, já até "),
+                      TextSpan(
+                          text: "consegui a vaga",
+                          style: TextStyle(fontWeight: FontWeight.bold)),
+                      TextSpan(
+                          text:
+                              " na escola francesa onde tanto almejo estudar."),
+                      TextSpan(text: "\n\n"),
+                      TextSpan(
+                          text:
+                              "Porém, por diferentes razões, ainda não consegui nenhuma bolsa de estudos e, por isso, preciso da "),
                       TextSpan(
                           text: "sua ajuda.",
-                          style: TextStyle(fontWeight: FontWeight.bold))
+                          style: TextStyle(fontWeight: FontWeight.bold)),
+                      TextSpan(
+                          text:
+                              " Já tenho a passagem comprada, mas estou em busca de como me sustentar lá."),
                     ])),
-            const SizedBox(height: 70),
+            const SizedBox(height: 60),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: RichText(
@@ -80,7 +93,7 @@ class IdentityPartition extends StatelessWidget {
                                       TextStyle(fontWeight: FontWeight.bold)),
                               TextSpan(
                                   text:
-                                      " e que está determinado a voltar para trabalhar em terras tupiniquins.\""),
+                                      " e que está determinado a voltar para trabalhar em minha terra natal.\""),
                             ]),
                       ])),
             ),
