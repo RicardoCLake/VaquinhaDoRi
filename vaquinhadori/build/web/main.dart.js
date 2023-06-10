@@ -72201,7 +72201,7 @@ A.Gv.prototype={
 M(a){var s=null,r=t.w
 return A.lJ(A.a([A.dm(s,B.ll,s,s,B.y4,50,s,s,a.K(r).f.a.a/3),A.dm(s,B.ll,s,s,B.y3,50,s,s,a.K(r).f.a.a/3),A.dm(s,B.ll,s,s,B.y1,50,s,s,a.K(r).f.a.a/3)],t.p),B.aj,B.al,B.a4)}}
 A.GO.prototype={
-M(a){var s,r,q,p=null,o=t.p,n=A.lJ(A.a([B.Od,B.cN,A.a0l("assets/images/perfil.png",200,p)],o),B.by,B.al,B.a4),m=t.yS,l=a.K(m)
+M(a){var s,r,q,p=null,o=t.p,n=A.lJ(A.a([B.Od,B.cN,A.a0l("assets/images/perfil.png",150,p)],o),B.by,B.al,B.a4),m=t.yS,l=a.K(m)
 l=A.eg(p,p,B.P,p,p,!0,p,A.bk(B.CC,p,(l==null?B.z:l).w,p),B.bW,p,p,1,B.K)
 s=a.K(m)
 s=A.eg(p,p,B.P,p,p,!0,p,A.bk(B.CS,p,(s==null?B.z:s).w,p),B.dA,p,p,1,B.K)
@@ -77186,7 +77186,7 @@ B.wS=new A.z5(1,"longestLine")
 B.N1=new A.q(!0,null,null,null,null,null,30,B.aT,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Oc=new A.fY("Como \xe9 poss\xedvel me ajudar?",null,B.N1,null,null,null,null)
 B.wT=new A.fY("Carregando informa\xe7\xf5es...",null,null,null,null,null,null)
-B.N2=new A.q(!0,null,null,null,null,null,32,B.aT,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.N2=new A.q(!0,null,null,null,null,null,28,B.aT,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Od=new A.fY("Quem sou?",null,B.N2,null,null,null,null)
 B.N3=new A.q(!0,null,null,null,null,null,26,B.aT,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Oe=new A.fY("Para onde vou?",null,B.N3,null,null,null,null)
