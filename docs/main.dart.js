@@ -72201,7 +72201,7 @@ A.Gv.prototype={
 M(a){var s=null,r=t.w
 return A.lJ(A.a([A.dm(s,B.ll,s,s,B.y4,50,s,s,a.K(r).f.a.a/3),A.dm(s,B.ll,s,s,B.y3,50,s,s,a.K(r).f.a.a/3),A.dm(s,B.ll,s,s,B.y1,50,s,s,a.K(r).f.a.a/3)],t.p),B.aj,B.al,B.a4)}}
 A.GO.prototype={
-M(a){var s,r,q,p=null,o=t.p,n=A.lJ(A.a([B.Od,B.cN,A.a0l("assets/images/perfil.png",200,p)],o),B.by,B.al,B.a4),m=t.yS,l=a.K(m)
+M(a){var s,r,q,p=null,o=t.p,n=A.lJ(A.a([B.Od,B.cN,A.a0l("assets/images/perfil.png",150,p)],o),B.by,B.al,B.a4),m=t.yS,l=a.K(m)
 l=A.eg(p,p,B.P,p,p,!0,p,A.bk(B.CC,p,(l==null?B.z:l).w,p),B.bW,p,p,1,B.K)
 s=a.K(m)
 s=A.eg(p,p,B.P,p,p,!0,p,A.bk(B.CS,p,(s==null?B.z:s).w,p),B.dA,p,p,1,B.K)
@@ -72217,7 +72217,7 @@ A.HJ.prototype={
 M(a){return new A.ww(B.Gs,"Vaquinha do Ri",A.ale(B.xx,null,B.ze,"RobotoSlab",B.O8,null),!1,null)}}
 A.HL.prototype={
 M(a){var s=null
-return A.dm(B.m3,A.lJ(A.a([B.cN,A.uq(A.a0l("assets/images/LogoVaquinhadoRi-simples-semfundo.png",40,s),s,s),B.cN,A.fo(A.dm(B.m2,A.eg(s,s,B.P,s,s,!0,s,B.K0,B.aE,s,s,1,B.K),s,s,s,s,s,s,s),56,s),B.cN],t.p),B.aj,B.al,B.a4),s,s,s,s,s,s,s)}}
+return A.dm(B.m3,A.lJ(A.a([B.cN,A.uq(A.a0l("assets/images/LogoVaquinhadoRi-simples-semfundo.png",35,s),s,s),B.cN,A.fo(A.dm(B.m2,A.eg(s,s,B.P,s,s,!0,s,B.K0,B.aE,s,s,1,B.K),s,s,s,s,s,s,s),49,s),B.cN],t.p),B.aj,B.al,B.a4),s,s,s,s,s,s,s)}}
 A.HK.prototype={
 M(a){var s=null
 return new A.GW(A.lJ(A.a([A.vm(A.KN(A.ob("Moi",s,B.lu,s,s),this.c,s),1),B.x6,A.vm(A.KN(A.ob("L'\xe9cole",s,B.lu,s,s),this.d,s),1),B.x6,A.vm(A.KN(A.ob("Donations",s,B.lu,s,s),this.e,s),1)],t.p),B.aj,B.al,B.a4),s)}}
@@ -72249,7 +72249,7 @@ o===$&&A.b()
 s=q
 return new A.y5(new A.u_(!1,B.Gq,new A.IN(new A.HK(r.ga36(),r.ga38(),r.ga34(),q),B.IE,q),10,B.mI,!1,0,new A.PH(90,20,1/0,90+p),90,q),new A.He(new A.a8X(r.gabv(),5,!0,!0,!0,q),q,B.aP,!1,o,q,s,!1,q,5,B.aH,B.Hx,q,B.a_,q),q)}}
 A.KD.prototype={
-M(a){var s,r,q,p,o,n=null,m=t.p,l=A.lJ(A.a([A.a0l("assets/images/logoCS.png",n,180),B.cN,B.Oe],m),B.by,B.al,B.a4),k=t.yS,j=a.K(k)
+M(a){var s,r,q,p,o,n=null,m=t.p,l=A.lJ(A.a([A.a0l("assets/images/logoCS.png",n,100),B.cN,B.Oe],m),B.by,B.al,B.a4),k=t.yS,j=a.K(k)
 j=A.eg(n,n,B.P,n,n,!0,n,A.bk(B.E_,n,(j==null?B.z:j).w,n),B.bW,n,n,1,B.K)
 s=A.a0l("assets/images/ImagemClassificacaoSupelec.png",n,200)
 r=a.K(k)
@@ -76948,15 +76948,15 @@ B.fa=new A.rq(1,"right")
 B.dB=new A.rq(2,"collapsed")
 B.JZ=new A.z4(null,null,null)
 B.K_=new A.e3(0,0,B.i,!1,0,0)
-B.N5=new A.q(!0,B.V,null,"RubikMonoOne",null,null,34,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.N5=new A.q(!0,B.V,null,"RubikMonoOne",null,null,30,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.K7=new A.b4("V",null,null,B.n,B.N5)
 B.wP=new A.q(!0,B.V,null,"Nunito",null,null,null,B.aI,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Ka=new A.b4("aquinha do ",null,null,B.n,B.wP)
-B.Mm=new A.q(!0,B.b4,null,"RubikMonoOne",null,null,34,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.Mm=new A.q(!0,B.b4,null,"RubikMonoOne",null,null,30,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.K5=new A.b4("R",null,null,B.n,B.Mm)
 B.Kg=new A.b4("icardo",null,null,B.n,B.wP)
 B.CQ=A.a(s([B.K7,B.Ka,B.K5,B.Kg]),t.R)
-B.Mv=new A.q(!0,null,null,"NunitoSans",null,null,30,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.Mv=new A.q(!0,null,null,"NunitoSans",null,null,27,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.K0=new A.b4(null,B.CQ,null,B.n,B.Mv)
 B.Ky=new A.b4("!\u201d",null,null,B.n,null)
 B.zm=new A.O(3506372608)
@@ -77186,9 +77186,9 @@ B.wS=new A.z5(1,"longestLine")
 B.N1=new A.q(!0,null,null,null,null,null,30,B.aT,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Oc=new A.fY("Como \xe9 poss\xedvel me ajudar?",null,B.N1,null,null,null,null)
 B.wT=new A.fY("Carregando informa\xe7\xf5es...",null,null,null,null,null,null)
-B.N2=new A.q(!0,null,null,null,null,null,32,B.aT,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.N2=new A.q(!0,null,null,null,null,null,28,B.aT,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Od=new A.fY("Quem sou?",null,B.N2,null,null,null,null)
-B.N3=new A.q(!0,null,null,null,null,null,26,B.aT,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.N3=new A.q(!0,null,null,null,null,null,25,B.aT,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Oe=new A.fY("Para onde vou?",null,B.N3,null,null,null,null)
 B.wU=new A.fY("Erro ao carregar dados",null,null,null,null,null,null)
 B.wV=new A.fY("Erro ao carregar dados.",null,null,null,null,null,null)
