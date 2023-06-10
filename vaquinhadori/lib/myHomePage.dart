@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaquinhadori/myTheme.dart';
 import 'package:vaquinhadori/supelecPartition.dart';
 import 'package:vaquinhadori/francePartition.dart';
 import 'package:vaquinhadori/donationPartition.dart';
@@ -79,6 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
           titleSpacing: 0,
           centerTitle: false,
           elevation: 10,
+          surfaceTintColor: MyTheme.almostBlack,
           toolbarHeight: 90,
           title: const MyAppBarTitle(),
           automaticallyImplyLeading: false,
