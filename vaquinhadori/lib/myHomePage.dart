@@ -21,8 +21,32 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   late ScrollController _scrollController;
+  late bool isPc;
+
+  @override
+  void initState() {
+    super.initState();
+    _scrollController = ScrollController();
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (MediaQuery.of(context).size.width > 800) {
+      isPc = true;
+    } else {
+      isPc = false;
+    }
+  }
 
   Widget? partitionsBuilder(BuildContext context, int partitionID) {
+    if (isPc) {
+      return partitionsBuilder2(context, partitionID);
+    } //else
+    return partitionsBuilder1(context, partitionID);
+  }
+
+  Widget? partitionsBuilder1(BuildContext context, int partitionID) {
     switch (partitionID) {
       case 0:
         return const IdentityPartition();
@@ -37,6 +61,39 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
+  Widget? partitionsBuilder2(BuildContext context, int partitionID) {
+    switch (partitionID) {
+      case 0:
+        return Container(
+          decoration: const BoxDecoration(
+            color: MyTheme.almostWhite,
+          ),
+          child: const UnconstrainedBox(
+              child: LimitedBox(maxWidth: 700, child: IdentityPartition())),
+        );
+      case 1:
+        return const FrancePartition();
+      case 2:
+        return Container(
+          decoration: const BoxDecoration(
+            color: MyTheme.almostWhite,
+          ),
+          child: const UnconstrainedBox(
+              child: LimitedBox(maxWidth: 700, child: SupelecPartition())),
+        );
+      case 3:
+        return const FrancePartition();
+      default:
+        return Container(
+          decoration: const BoxDecoration(
+            color: MyTheme.lightblue,
+          ),
+          child: const UnconstrainedBox(
+              child: LimitedBox(maxWidth: 700, child: DonationPartition())),
+        );
+    }
+  }
+
   void _scrollToIdentity() {
     _scrollController.animateTo(
       0, // Posição específica na lista
@@ -47,7 +104,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _scrollToSupelec() {
     _scrollController.animateTo(
-      875, //calculo exato de identity+france
+      isPc ? 725 : 925, //calculo exato de identity+france
       duration: const Duration(milliseconds: 500),
       curve: Curves.easeInOut,
     );
@@ -55,7 +112,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _scrollToDonation() {
     _scrollController.animateTo(
-      1592, //calculo exato de identity+france+supelec+france
+      isPc ? 1242 : 1642, //calculo exato de identity+france+supelec+france
       duration: const Duration(milliseconds: 500),
       curve: Curves.easeInOut,
     );
@@ -65,12 +122,6 @@ class _MyHomePageState extends State<MyHomePage> {
   void dispose() {
     _scrollController.dispose();
     super.dispose();
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    _scrollController = ScrollController();
   }
 
   @override
