@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:vaquinhadori/donationInformations.dart';
 import 'package:vaquinhadori/myTheme.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter/gestures.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class PixButton extends StatefulWidget {
   const PixButton({super.key});
@@ -64,7 +66,7 @@ class DonationPartition extends StatelessWidget {
     return DefaultTextStyle.merge(
       style: const TextStyle(color: MyTheme.almostWhite),
       child: Container(
-          padding: const EdgeInsets.symmetric(vertical: 50, horizontal: 40),
+          padding: const EdgeInsets.only(top: 50, left: 40, right: 40),
           decoration: const BoxDecoration(
             color: MyTheme.lightblue,
           ),
@@ -187,7 +189,49 @@ class DonationPartition extends StatelessWidget {
             const SizedBox(height: 60),
             const GetDonatorCount(),
             const SizedBox(height: 60),
+            RichText(
+                textAlign: TextAlign.justify,
+                text: TextSpan(
+                    style: DefaultTextStyle.of(context).style.merge(TextStyle(
+                        color: MyTheme.almostWhite,
+                        fontFamily: MyTheme.primaryFont,
+                        fontSize:
+                            DefaultTextStyle.of(context).style.fontSize! - 3)),
+                    children: [
+                      TextSpan(text: "( Desenvolvido por: "),
+                      TextSpan(
+                          recognizer: TapGestureRecognizer()
+                            ..onTap = launchURL1,
+                          text: "Ricardo",
+                          style:
+                              TextStyle(decoration: TextDecoration.underline)),
+                      TextSpan(text: " e "),
+                      TextSpan(
+                          recognizer: TapGestureRecognizer()
+                            ..onTap = launchURL2,
+                          text: "Gabriel",
+                          style:
+                              TextStyle(decoration: TextDecoration.underline)),
+                      TextSpan(text: " )"),
+                    ])),
+            const SizedBox(height: 15),
           ])),
     );
+  }
+}
+
+launchURL1() async {
+  Uri url = Uri.parse('https://www.linkedin.com/in/ricardo-chiquetto-do-lago');
+  if (await launchUrl(url)) {
+  } else {
+    throw 'Não foi possível carregar o site do Ricardo';
+  }
+}
+
+launchURL2() async {
+  Uri url = Uri.parse('https://www.linkedin.com/in/gmduarte/');
+  if (await launchUrl(url)) {
+  } else {
+    throw 'Não foi possível carregar o site do Gabriel';
   }
 }
