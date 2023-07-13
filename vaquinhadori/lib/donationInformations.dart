@@ -33,7 +33,7 @@ class GetValueCounter extends StatelessWidget {
         }
         Map<String, dynamic> data =
             snapshot.data?.docs.first.data() as Map<String, dynamic>;
-        var numFormat = NumberFormat("######.00", "pt_BR");
+        var numFormat = NumberFormat("###,###.00", "pt_BR");
         if (snapshot.connectionState == ConnectionState.done) {
           return Expanded(
             flex: 1,

@@ -72256,7 +72256,7 @@ s=B.b.gL(J.ajL(s))
 s=J.bh(s).Fq(s)
 s.toString
 t.P.a(s)
-r=A.ayY("######.00","pt_BR")
+r=A.ayY("###,###.00","pt_BR")
 if(b.a===B.cI){q=t.yS
 p=a.K(q)
 if(p==null)p=B.y
